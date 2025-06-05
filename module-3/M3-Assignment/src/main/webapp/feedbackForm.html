@@ -1,0 +1,58 @@
+<!-- Jose Franco
+ 	 06/04/2025
+ 	 Module 3 Assignment
+ 	 Creating a form to collect data from user and displaying the return data in a separate JSP file 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Experience Feedback</title>
+    
+    <!-- link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- page heading -->
+    <h1>Franco Ristorante Experience Feedback Form</h1>
+    <p>Please tell us about your recent visit to our restaurant.</p>
+
+    <!-- start of form that sends data to feedbackResult.jsp -->
+    <form action="feedbackResult.jsp" method="post">
+        
+        <!-- picture of a logo -->
+        <img src="franco-ristorante.png" alt="Franco Ristorante" width="100" style="display:block; margin-bottom: 20px;">
+        
+        
+        <!-- input field for user's name -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- input field for user's email -->
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- dropdown menu for rating (1–5) -->
+        <label for="rating">Overall Rating (1-5):</label><br>
+        <select id="rating" name="rating">
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Okay</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select><br><br>
+
+        <!-- date picker for user's visit date -->
+        <label for="visitDate">Date of Visit:</label><br>
+        <input type="date" id="visitDate" name="visitDate" required><br><br>
+
+        <!-- textarea for additional comments -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- submit button to send form data -->
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
