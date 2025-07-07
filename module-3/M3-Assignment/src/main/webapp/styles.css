@@ -1,0 +1,73 @@
+/*Jose Franco*/
+/*06/04/25*/
+/*Module 3 Assignment*/
+
+
+@charset "UTF-8";
+
+/*  general page style */
+body {
+    font-family: 'Georgia', serif;      
+    background-color: #fff9f0;          
+    color: #5b2c0f;                     
+    padding: 20px;
+}
+
+/* heading colors  */
+h1 {
+    color: #b22222;  
+}
+
+h2 {
+    color: #228b22;  
+}
+
+/* form styling */
+form {
+    background-color: #fffefa;          
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #b22222;          
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(178, 34, 34, 0.2); 
+}
+
+label {
+    font-weight: bold;
+    color: #5b2c0f;
+}
+
+/* submit button */
+input[type="submit"] {
+    background-color: #228b22;  
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #196619;  
+}
+
+/*  table styling */
+table {
+    background-color: #fffefa;
+    border: 2px solid #b22222;
+    border-collapse: collapse;
+    width: 600px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(178, 34, 34, 0.2);
+}
+
+th {
+    background-color: #b22222;  
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
